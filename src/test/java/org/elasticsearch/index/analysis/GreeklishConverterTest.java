@@ -58,8 +58,7 @@ public class GreeklishConverterTest {
 	@Test
 	public void testGreekTokenConversionsForInvalidWords() {
 		for (String invalidWord : invalidWords) {
-			greeklishWords = converter.convert(invalidWord.toCharArray(),
-					invalidWord.length());
+			greeklishWords = converter.convert(invalidWord.toCharArray(), invalidWord.length());
 
 			Assert.assertNull(greeklishWords,
 					"It should not create any greeklish words");
@@ -69,8 +68,7 @@ public class GreeklishConverterTest {
 	@Test
 	public void testGreekTokenConversionForValidWords() {
 		for (int i = 0; i < greekWords.length; i++) {
-			greeklishWords = converter.convert(greekWords[i].toCharArray(),
-					greekWords[i].length());
+			greeklishWords = converter.convert(greekWords[i].toCharArray(),	greekWords[i].length());
 
 			populateConvertedStringsList();
 
@@ -130,6 +128,7 @@ public class GreeklishConverterTest {
 
 	private final void populateConvertedStringsList() {
 		for (StringBuilder word : greeklishWords) {
+			System.out.println(word);
 			convertedGreeklishStrings.add(word.toString());
 		}
 	}

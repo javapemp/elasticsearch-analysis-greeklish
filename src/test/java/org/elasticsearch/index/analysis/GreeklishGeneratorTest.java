@@ -31,7 +31,7 @@ public class GreeklishGeneratorTest {
 
 	private GreeklishGenerator generator;
 
-	private List<String> inputGreekList = new ArrayList<String>();
+	private List<String> inputGreekList = new ArrayList<>();
 
 	private List<StringBuilder> greeklishWords;
 
@@ -84,6 +84,7 @@ public class GreeklishGeneratorTest {
 
 	private final void populateConvertedStringsList() {
 		for (StringBuilder word : greeklishWords) {
+			System.out.println(word);
 			convertedGreeklishStrings.add(word.toString());
 		}
 	}

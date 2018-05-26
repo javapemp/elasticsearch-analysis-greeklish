@@ -41,7 +41,7 @@ public class GreeklishGenerator {
 	/**
 	 * Each digraph is replaced by a special capital Greek character.
 	 */
-	private final Map<String, String> digraphs = new HashMap<String, String>();
+	private final Map<String, String> digraphs = new HashMap<>();
 
 	/**
 	 * This hash has keys all the possible conversions that can be applied and
