@@ -120,8 +120,7 @@ public class GreeklishConverter {
 	private boolean identifyGreekWord(String input) {
 		if (StringUtils.containsOnly(input, GREEK_CHARACTERS)) {
 			return true;
-		} else {
-			return false;
 		}
+		return false;
 	}
 }
